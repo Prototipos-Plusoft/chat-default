@@ -1,0 +1,304 @@
+input.has-error:required,
+select.has-error:required,
+.has-error {
+  border-color: #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+input.has-error:required:focus,
+select.has-error:required:focus,
+.has-error:focus {
+  border-color: #843534;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+}
+input:required,
+select:required {
+  border-color: #eea236;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+input:required:focus,
+select:required:focus {
+  border-color: #985f0d;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ec971f;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ec971f;
+}
+.modal-open .modal {
+    display: flex !important;
+}
+
+.alert.alert-danger {
+    display: none;
+}
+
+#btn_mostra_modal {
+    display: none !important;
+}
+
+.message-user {
+    width: 100%;
+    display: inline-block;
+}
+.alert {
+    float: left;
+}
+.alert + .alert {
+    margin-left: 16px !important;
+}
+body {
+	padding: 10px 50px;
+}
+header > img {
+	height: 40px;
+}
+footer > strong {
+	text-align: center;
+	padding: 10px;
+	display: inline-block;
+	width: 100%;
+}
+footer > h6 {
+    text-align: center;
+}
+.pull-center {
+	text-align: center;
+}
+#atendimento_finalizado {
+	display: none;
+    padding-top: 150px;
+}
+#atendimento_finalizado p {
+    text-align: center;
+}
+textarea {
+	resize: none;
+}
+
+header button {
+    position: absolute;
+    right: 55px;
+    top: 35px;
+    /* padding: 0 7px !important; */
+    /* height: 22px; */
+    border-radius: 10px;
+}
+
+#divMensagem {
+    height: 433px;
+}
+#divMensagem,
+#Historico {
+    width: 100%;
+    padding: 0 10px;
+    border: 1px solid #b7b6b6;
+}
+#Historico {
+    height: 300px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+hr {
+    border-top: 1px solid #b7b6b6;
+}
+
+textarea.form-control,
+#button_enviar_mensagem {
+    height: 54px;
+}
+
+/*ESTILO BOOTSTRAP*/
+#file {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+/* BALÃO */
+.balloon-operador,
+.balloon-cliente {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	display: inline-block;
+	max-width: 85%;
+	padding: 0;
+}
+.balloon-operador li,
+.balloon-cliente li {
+	display: table-cell;
+}
+.balloon-operador li + li,
+.balloon-cliente li:first-child {
+	background-color: #cee8eb;
+    padding: 3px 7px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+.balloon-operador li + li::before,
+.balloon-cliente li::before {
+	/* content: ""; */
+    vertical-align: middle;    
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;    
+    display: inline-block;
+}
+/* ESPECÍFICOS DO OPERADOR */
+.balloon-operador li + li::before {
+	margin-left: -14px;
+    margin-top: -1px;
+    border-right: 5px solid #;
+}
+/* ESPECÍFICOS DO CLIENTE */
+.balloon-cliente li::before {
+	 margin-left: 0px;
+    margin-top: -1px;
+    border-left: 5px solid #cee8eb;
+}
+.balloon-operador [id^=texto] p,
+.balloon-cliente [id^=texto] p {
+	display: inline-block;
+}
+.balloon-operador [id^=texto] + div,
+.balloon-cliente [id^=texto] + div {
+	display: block;	
+	margin-top: 2px;
+	min-width: 100px;
+}
+/* ESPECÍFICOS DO OPERADOR */
+.balloon-operador [id^=texto] + div {
+	text-align: right;
+}
+/* ESPECÍFICOS DO CLIENTE */
+.balloon-cliente [id^=texto] + div {
+	text-align: left;
+}
+.balloon-operador > li p,
+.balloon-cliente > li p {
+    margin-bottom: 0;
+}
+.balloon-operador > li {
+	background: #e0e0e0;
+    padding: 3px 7px;
+    border-radius: 3px;
+}
+
+.balloon-operador::before {
+	content: "";
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    display: inline-block;
+    margin-left: 0;
+    margin-top: 5px;
+    border-right: 10px solid #e0e0e0;
+    float: left;
+}
+
+.balloon-cliente::before {
+    content: "";
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    display: inline-block;
+    margin-left: 0px;
+    margin-top: 5px;
+    border-left: 10px solid #cee8eb;
+    float: right;
+}
+
+p {
+    word-wrap: break-word;
+}
+.balloon-operador li, 
+.balloon-cliente li {
+    width: 100%;
+    /*float: left;*/
+}
+.balloon-cliente li {
+    width: 90%;
+}
+
+[id^=mensagemcliente] {
+	text-align: right;
+}
+[id^=mensagem] [id^=nome],
+[id^=mensagemcliente] [id^=nome] {
+	margin-left: 4px;
+	font-weight: bold;
+	padding-right: 10px;
+	/* color: #00367b; */
+}
+[id^=data],
+[id^=hora] {
+	font-size: 10px !important;
+}
+
+p, span { 
+    word-break: break-word;
+}
+
+p br {
+    display: none;
+}
+
+/* firefox*/
+@-moz-document url-prefix() { 
+  #file {
+    padding-bottom: 41px;
+  }
+  p, span {
+    word-break: normal;
+   }  
+}
+
+/* saf3+, chrome1+ */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .balloon-cliente::before {
+        margin-left: -2px;
+      }
+}
+
+/*
+.balloon-atendente-digitando {
+    position: absolute;
+    top: 12px;
+    background: #f3b315;
+    width: 200px;
+    padding: 10px;
+    color: #ffffff;
+    margin-left: -35px;
+    border-radius: 3px;
+}
+
+.balloon-atendente-digitando:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #f3b315;
+    float: left;
+    margin-top: -40px;
+}*/

@@ -1,1 +1,2 @@
-# chat-default
+# arquivos-chat
+Arquivos do chat
